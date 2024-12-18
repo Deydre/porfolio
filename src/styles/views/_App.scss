@@ -65,6 +65,11 @@ body.light a:hover {
     color: $primary-color;
 }
 
+h1 {
+    @include font-fira-sans-black-italic;
+    font-size: 80px;
+}
+
     // color: transparent;
     // background-image: $primary-color;
     // background-clip: text;

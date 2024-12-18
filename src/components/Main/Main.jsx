@@ -1,7 +1,16 @@
 import React from "react";
+import Hero from './Hero';
+import About from './About';
+import Projects from './Projects';
+import Career from './Career';
 
 const Main = () => {
-  return <main>Main</main>;
+  return <main>
+    <Hero/>
+    <About/>
+    <Projects/>
+    <Career/>
+  </main>;
 };
 
 export default Main;

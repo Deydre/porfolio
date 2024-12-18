@@ -1,0 +1,15 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+#hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background: $gradient-dark;
+    // padding: 0px 400px;
+    padding: 0px 24%;
+
+}
+
