@@ -12,8 +12,8 @@ const About = () => {
             IMG
           </div>
           <div className="aboutDivTxt">
-            <h3>Ejemplo</h3>
-            <p>Texto ejemplo</p>
+            <h3>Autodidacta</h3>
+            <p>Me encanta aprender cosas nuevas y adaptarme a cualquier desafío.</p>
           </div>
         </article>
         <article>
@@ -21,8 +21,8 @@ const About = () => {
             IMG
           </div>
           <div className="aboutDivTxt">
-            <h3>Ejemplo</h3>
-            <p>Texto ejemplo</p>
+            <h3>Resolutiva</h3>
+            <p>Me enfoco en encontrar soluciones eficientes de manera ágil y eficaz.</p>
           </div>
         </article>
         <article>
@@ -30,8 +30,9 @@ const About = () => {
             IMG
           </div>
           <div className="aboutDivTxt">
-            <h3>Ejemplo</h3>
-            <p>Texto ejemplo</p>
+            <h3>Trabajo en Equipo</h3>
+            <p>
+            Trabajo en equipo de manera eficiente, sumando ideas y aportando para lograr los objetivos comunes.</p>
           </div>
         </article>
       </div>
