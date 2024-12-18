@@ -1,0 +1,30 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    @include font-onest; 
+}
+
+body {
+    color: $secondary-color;
+    background-color: $primary-color;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.light {
+    color: $primary-color;
+    background-color: $secondary-color;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+body.light a {
+    text-decoration: none;
+    color: $primary-color;
+    transition: color 0.5s ease-out, color 0.5s ease-out;
+}
