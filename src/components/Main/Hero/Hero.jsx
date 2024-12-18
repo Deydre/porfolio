@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
 
@@ -22,24 +23,32 @@ const Hero = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-   
+
 
   return <>
     <section id="hero">
       <article>
         <h4>Hola, soy</h4>
         <h1
-            style={{
-              "background-image": gradient,
-            }}
-          >Deydre</h1>
+          style={{
+            "background-image": gradient,
+          }}
+        >Deydre</h1>
       </article>
       <article>
-        <p><strong>Fullstack developer con una sólida formación en diseño y UI/UX.</strong></p>
+        <p>Fullstack developer con una sólida formación en diseño y UI/UX.</p>
       </article>
-      <article>
-        <FaGithub className="footerIcon" />
-      </article>
+      <section>
+        <article>
+          <a href="mailto:deydrealonso@gmail.com">
+            <button><MdEmail />Contacto</button>
+          </a>
+        </article>
+        <article>
+          <a href="https://github.com/Deydre" target="_blank"><FaGithub className="footerIcon" /></a>
+          <a href="https://www.linkedin.com/in/deydre/" target="_blank"><FaLinkedin className="footerIcon" /></a>
+        </article>
+      </section>
 
     </section>
   </>;

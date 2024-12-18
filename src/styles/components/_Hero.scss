@@ -17,4 +17,21 @@
         background-clip: text;
         text-decoration: none;
     }
+
+    section {
+        display: flex;
+        gap: 20px;
+
+        article:last-child {
+            padding-left: 20px;
+            border-left: 1px solid $light;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+body.light #hero {
+    background: $gradient;
 }

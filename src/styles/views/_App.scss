@@ -70,6 +70,40 @@ h1 {
     font-size: 80px;
 }
 
+button {
+    padding: 8px 18px;
+    font-weight: 700;
+    border-radius: 100px;
+    background-color: inherit;
+    color: $light;
+    border: 1px solid $light-soft;
+    background: $gradient-darker;
+    transition: background 0.3s ease, font-size 0.3s ease, padding 0.3s ease, border 0.3s ease; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: $gradient;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 1px solid $secondary-color;
+    @include soft-shadow($primary-color);
+}
+
+body.light button {
+    color: $dark;
+    border: 1px solid $dark;
+}
+
+body.light button:hover {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    @include soft-shadow($primary-color);
+}
+
     // color: transparent;
     // background-image: $primary-color;
     // background-clip: text;

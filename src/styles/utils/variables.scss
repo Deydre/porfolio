@@ -1,8 +1,10 @@
 $dark: #25202f;
-$light: #fff;
+$light: rgba(255, 255, 255);
+$light-soft: rgba(255, 255, 255, 0.673);
 
 $gradient: linear-gradient(140deg, rgba(170,123,221,1) 0%, rgba(0,255,176,1) 100%);
 $gradient-lighter: linear-gradient(140deg, rgb(171, 97, 249) 0%, rgb(0, 255, 174) 100%);
+$gradient-darker: linear-gradient(140deg, rgba(170, 97, 249, 0.880) 0%, rgba(0, 255, 174, 0.880) 100%);
 $gradient-dark: linear-gradient(0deg, #25202f 0%, #3c3047 100%);
 $primary-color:rgba(170,123,221,1) ;
 $secondary-color:rgba(0,255,176,1);
