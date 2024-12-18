@@ -4,27 +4,68 @@
 * {
     padding: 0px;
     margin: 0px;
-    @include font-onest; 
+    @include font-onest;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
 body {
-    color: $secondary-color;
-    background-color: $primary-color;
+    background-position:top; 
+    background-repeat: no-repeat; 
+    color: $light;
+    // background-color: $dark;
+    background: $dark;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-body.light {
-    color: $primary-color;
-    background-color: $secondary-color;
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; // Evitar desplazamiento horizontal
 }
+
+body.light {
+    color: $dark;
+    background-color: $light;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $dark;
+    z-index: -1;
+  }
 
 a {
     text-decoration: none;
+    color: $light;
+    font-weight: 500;
+}
+
+a:hover, body.light a:hover {
     color: $secondary-color;
 }
 
 body.light a {
     text-decoration: none;
-    color: $primary-color;
+    color: $dark;
     transition: color 0.5s ease-out, color 0.5s ease-out;
 }
+
+body.light a:hover {
+    color: $primary-color;
+}
+
+    // color: transparent;
+    // background-image: $primary-color;
+    // background-clip: text;
+    // text-decoration: none;
