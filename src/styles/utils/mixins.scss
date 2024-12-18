@@ -4,6 +4,12 @@
     box-shadow: 2px 2px 12px 2px $shadow-color;
 }
 
+@mixin soft-shadow ($shadow-color) {
+    -webkit-box-shadow: 4px 4px 12px 4px $shadow-color;
+    -moz-box-shadow: 4px 4px 12px 4px $shadow-color;
+    box-shadow: 0px 0px 4px 0px $shadow-color;
+}
+
 @mixin font-onest {
     font-family: "Onest", serif;
     font-optical-sizing: auto;
