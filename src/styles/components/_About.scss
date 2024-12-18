@@ -1,0 +1,17 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+#sectionAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding: 60px 24%;
+    background: $gradient;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        background-color: blue;
+    }
+
+}
