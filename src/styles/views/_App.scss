@@ -4,27 +4,41 @@
 * {
     padding: 0px;
     margin: 0px;
-    @include font-onest; 
+    @include font-onest;
 }
 
 body {
-    color: $secondary-color;
-    background-color: $primary-color;
+    color: $light;
+    background-color: $dark;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body.light {
-    color: $primary-color;
-    background-color: $secondary-color;
+    color: $dark;
+    background-color: $light;
 }
 
 a {
     text-decoration: none;
+    color: $light;
+    font-weight: 500;
+}
+
+a:hover, body.light a:hover {
     color: $secondary-color;
 }
 
 body.light a {
     text-decoration: none;
-    color: $primary-color;
+    color: $dark;
     transition: color 0.5s ease-out, color 0.5s ease-out;
 }
+
+body.light a:hover {
+    color: $primary-color;
+}
+
+    // color: transparent;
+    // background-image: $primary-color;
+    // background-clip: text;
+    // text-decoration: none;

@@ -1,0 +1,25 @@
+@use '../utils/variables.scss' as *;
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20%;
+}
+
+.footerIcon {
+    font-size: 1.26em;
+}
+
+footer section {
+    display: flex;
+    gap: 20px;
+}
+
+footer article:nth-child(2) {
+    display: flex;
+    gap: 14px;
+    border-left: 1px solid $light;
+    padding: 0px 20px;
+}

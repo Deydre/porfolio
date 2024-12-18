@@ -1,10 +1,15 @@
-$primary-color: #25202f;
-$secondary-color: white;
-$secondary-color-soft: rgba(255, 255, 255, 0.519);
-$secondary-color-soft-2: rgba(255, 255, 255, 0.315);
-$gradient1: linear-gradient(130deg, #4cff30, #048571);
-$transparent: rgba(255, 255, 255, 0.082);
-$transparent-soft: rgba(255, 255, 255, 0.179);
+$dark: #25202f;
+$light: #fff;
+
+$gradient: linear-gradient(140deg, rgba(170,123,221,1) 0%, rgba(0,255,176,1) 100%);
+$gradient-lighter: linear-gradient(140deg, rgb(171, 97, 249) 0%, rgb(0, 255, 174) 100%);
+$primary-color:rgba(170,123,221,1) ;
+$secondary-color:rgba(0,255,176,1);
+// $secondary-color-soft: rgba(255, 255, 255, 0.519);
+// $secondary-color-soft-2: rgba(255, 255, 255, 0.315);
+// $gradient1: linear-gradient(130deg, #4cff30, #048571);
+// $transparent: rgba(255, 255, 255, 0.082);
+// $transparent-soft: rgba(255, 255, 255, 0.179);
 // $gradient1: linear-gradient(130deg, #30f5ff, #2d12de);
 // $gradient1: linear-gradient(130deg, #ffba30, #de4c12);
 // $secondary-color: #ffcb05;
