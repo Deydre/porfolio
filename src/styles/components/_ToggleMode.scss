@@ -1,0 +1,80 @@
+.react-toggle {
+    position: relative;
+    width: 58px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #ccc; 
+    cursor: pointer;
+  
+    .react-toggle-track {
+        background-color: transparent;  // Hacer que el fondo sea transparente para los iconos personalizados
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        transition: background-color 0.3s;
+    }
+  
+    .react-toggle-thumb {
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 3px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s;
+    }
+  
+    .react-toggle-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      transition: transform 0.3s;
+    }
+
+    // Checked (oscuro)
+    &.react-toggle--checked {
+      background-color: #333; 
+  
+      .react-toggle-thumb {
+        transform: translateY(-50%) translateX(32px);
+      }
+  
+      .react-toggle-icon--left {
+        transform: translateY(-50%) translateX(-32px);
+      }
+  
+      .react-toggle-icon--right {
+        transform: translateY(-50%) translateX(32px); 
+      }
+    }
+  
+    // Unchecked (claro)
+    &.react-toggle--unchecked {
+      background-color: #ccc;
+  
+      .react-toggle-thumb {
+        transform: translateY(-50%) translateX(0);
+      }
+  
+      .react-toggle-icon--left {
+        transform: translateY(-50%) translateX(0);
+      }
+  
+      .react-toggle-icon--right {
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+  
+    input {
+      display: none;
+    }
+  }
+  
