@@ -16,7 +16,7 @@ const About = () => {
             <img src={autodidactaImg} alt="Libro abierto con estrellas" className="imgSobreMi" />
           </div>
           <div className="aboutDivTxt">
-            <h3>Autodidacta</h3>
+            <h4>Autodidacta</h4>
             <p>Me encanta aprender <strong>nuevas tecnologías</strong> y <strong>adaptarme a cualquier desafío</strong>. 
             <br></br>Tengo fluidez y rapidez a la hora de <strong>aprender por mí misma</strong> o con la ayuda de otras personas.</p>
           </div>
@@ -26,7 +26,7 @@ const About = () => {
             <img src={equipoImg} alt="Dos amnos encajando piezas de puzzle" className="imgSobreMi" />
           </div>
           <div className="aboutDivTxt">
-            <h3>Trabajo en Equipo</h3>
+            <h4>Trabajo en Equipo</h4>
             <p>
               Me integro bien en equipos <strong>aportando soluciones efectivas</strong>, enfrentándome a <strong>nuevos retos</strong> y creciento profesionalmente para <strong>lograr los objetivos comunes.</strong></p>
           </div>
@@ -36,7 +36,7 @@ const About = () => {
             <img src={detallistaImg} alt="Lápiz cohete" className="imgSobreMi" />
           </div>
           <div className="aboutDivTxt">
-            <h3>Resolutiva y detallista</h3>
+            <h4>Resolutiva y detallista</h4>
             <p>Me enfoco en <strong>encontrar soluciones eficientes</strong> de manera ágil y eficaz, usando mi <strong>creatividad, mi rapidez</strong> y centrándome siempre en el cliente final.</p>
           </div>
         </article>

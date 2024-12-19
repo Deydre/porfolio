@@ -1,0 +1,22 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+#sectionSkills {
+    background-color: red;
+    padding: 60px 22%;
+    ;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.technologies {
+    display: flex;
+    gap: 10px;
+}
