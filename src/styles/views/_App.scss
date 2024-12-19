@@ -70,6 +70,16 @@ h1 {
     font-size: 80px;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+h3 {
+    @include font-fira-sans-black-italic;
+    font-size: 20px;
+}
+
 button {
     padding: 8px 18px;
     font-weight: 700;

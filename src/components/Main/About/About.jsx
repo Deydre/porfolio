@@ -1,4 +1,8 @@
 import React from "react";
+import autodidactaImg from '../../../../public/autodidacta.png';
+import detallistaImg from '../../../../public/detallista.png';
+import equipoImg from '../../../../public/equipo.png';
+
 
 const About = () => {
   return <>
@@ -9,32 +13,34 @@ const About = () => {
       <div>
         <article>
           <div className="aboutDivImg">
-            IMG
+            <img src={autodidactaImg} alt="Libro abierto con estrellas" className="imgSobreMi" />
           </div>
           <div className="aboutDivTxt">
             <h3>Autodidacta</h3>
-            <p>Me encanta aprender cosas nuevas y adaptarme a cualquier desafío.</p>
+            <p>Me encanta aprender <strong>nuevas tecnologías</strong> y <strong>adaptarme a cualquier desafío</strong>. 
+            <br></br>Tengo fluidez y rapidez a la hora de <strong>aprender por mí misma</strong> o con la ayuda de otras personas.</p>
           </div>
         </article>
         <article>
           <div className="aboutDivImg">
-            IMG
-          </div>
-          <div className="aboutDivTxt">
-            <h3>Resolutiva</h3>
-            <p>Me enfoco en encontrar soluciones eficientes de manera ágil y eficaz.</p>
-          </div>
-        </article>
-        <article>
-          <div className="aboutDivImg">
-            IMG
+            <img src={equipoImg} alt="Dos amnos encajando piezas de puzzle" className="imgSobreMi" />
           </div>
           <div className="aboutDivTxt">
             <h3>Trabajo en Equipo</h3>
             <p>
-            Trabajo en equipo de manera eficiente, sumando ideas y aportando para lograr los objetivos comunes.</p>
+              Me integro bien en equipos <strong>aportando soluciones efectivas</strong>, enfrentándome a <strong>nuevos retos</strong> y creciento profesionalmente para <strong>lograr los objetivos comunes.</strong></p>
           </div>
         </article>
+        <article>
+          <div className="aboutDivImg">
+            <img src={detallistaImg} alt="Lápiz cohete" className="imgSobreMi" />
+          </div>
+          <div className="aboutDivTxt">
+            <h3>Resolutiva y detallista</h3>
+            <p>Me enfoco en <strong>encontrar soluciones eficientes</strong> de manera ágil y eficaz, usando mi <strong>creatividad, mi rapidez</strong> y centrándome siempre en el cliente final.</p>
+          </div>
+        </article>
+        
       </div>
     </section>
   </>;

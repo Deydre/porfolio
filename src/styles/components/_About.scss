@@ -5,20 +5,30 @@
     display: flex;
     flex-direction: column;
     gap: 34px;
-    padding: 60px 24%;
+    padding: 60px 22%;
     background: $gradient;
 
-    article {
+     article {
+        color: $dark-font;
         width: 400px;
         border-radius: 20px;
+        background-color: $light;
         border: 2px solid rgba(255, 255, 255, 0.36);
         box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.105);
-        padding: 20px;
+        padding: 40px 20px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 18px;
+        gap: 28px;
     }
+
+    p {
+        font-weight: 400;
+    }
+}
+
+body.light #sectionAbout {
+    background: $light;
 }
 
 #sectionAbout>div:first-child {
@@ -34,10 +44,20 @@
 
 .aboutDivImg {
     border: 100px;
+    text-align: center;
 }
 
 .aboutDivTxt {
     display: flex;
     flex-direction: column;
-    gap: 10px
+    align-items: center;
+    gap: 10px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.imgSobreMi {
+    width: 100px;
 }
