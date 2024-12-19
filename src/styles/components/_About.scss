@@ -8,10 +8,36 @@
     padding: 60px 24%;
     background: $gradient;
 
-    div {
+    article {
+        width: 400px;
+        border-radius: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.36);
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.105);
+        padding: 20px;
         display: flex;
-        justify-content: space-between;
-        background-color: blue;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 18px;
     }
+}
 
+#sectionAbout>div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+#sectionAbout>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    gap: 26px
+}
+
+.aboutDivImg {
+    border: 100px;
+}
+
+.aboutDivTxt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }
