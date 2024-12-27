@@ -19,6 +19,15 @@ import mongoDBLogoDark from '../../../assets/logos/mongoDB_dark.png';
 import mongooseLogoLight from '../../../assets/logos/mongoose.png';
 import mongooseLogoDark from '../../../assets/logos/mongoose_dark.png';
 
+import gitLogoLight from '../../../assets/logos/git.png';
+import gitLogoDark from '../../../assets/logos/git_dark.png';
+import githubLogoLight from '../../../assets/logos/github.png';
+import githubLogoDark from '../../../assets/logos/github_dark.png';
+import renderLogoLight from '../../../assets/logos/render.png';
+import renderLogoDark from '../../../assets/logos/render_dark.png';
+import netlifyLogoLight from '../../../assets/logos/netlify.png';
+import netlifyLogoDark from '../../../assets/logos/netlify_dark.png';
+
 const Projects = () => {
 
   const { isDark } = useContext(context);
@@ -31,6 +40,27 @@ const Projects = () => {
         <h3>Skills</h3>
         <section>
           <aside>
+            <p>Lenguajes</p>
+          </aside>
+          <article className="technologies">
+            <div>
+              {isDark === true
+                ? <img src={JavascriptLogoLight} alt="Javascript Logo" />
+                : <img src={JavascriptLogoDark} alt="Javascript Logo" />
+              }
+              <h5>React</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={TypescriptLogoLight} alt="Typescript Logo" />
+                : <img src={TypescriptLogoDark} alt="Typescript Logo" />
+              }
+              <h5>Sass</h5>
+            </div>
+          </article>
+        </section>
+        <section>
+          <aside>
             <p>Frontend</p>
           </aside>
           <article className="technologies">
@@ -39,14 +69,14 @@ const Projects = () => {
                 ? <img src={reactLogoLight} alt="React Logo" />
                 : <img src={reactLogoDark} alt="React Logo" />
               }
-              <p>React</p>
+              <h5>React</h5>
             </div>
             <div>
               {isDark === true
                 ? <img src={sassLogoLight} alt="Sass Logo" />
                 : <img src={sassLogoDark} alt="Sass Logo" />
               }
-              <p>Sass</p>
+              <h5>Sass</h5>
             </div>
           </article>
         </section>
@@ -60,14 +90,14 @@ const Projects = () => {
                 ? <img src={nodeLogoLight} alt="Node Logo" />
                 : <img src={nodeLogoDark} alt="Node Logo" />
               }
-              <p>Node</p>
+              <h5>Node</h5>
             </div>
             <div>
               {isDark === true
                 ? <img src={expressLogoLight} alt="Express Logo" />
                 : <img src={expressLogoDark} alt="Express Logo" />
               }
-              <p>Express</p>
+              <h5>Express</h5>
             </div>
           </article>
         </section>
@@ -81,47 +111,63 @@ const Projects = () => {
                 ? <img src={postgreSQLLogoLight} alt="PostgreSQL Logo" />
                 : <img src={postgreSQLLogoDark} alt="PostgreSQL Logo" />
               }
-              <p>PostgreSQL</p>
+              <h5>PostgreSQL</h5>
             </div>
             <div>
-            {isDark === true
+              {isDark === true
                 ? <img src={sequelizeLogoLight} alt="Sequelize Logo" />
                 : <img src={sequelizeLogoDark} alt="Sequelize Logo" />
               }
-              <p>Sequelize</p>
+              <h5>Sequelize</h5>
             </div>
             <div>
-            {isDark === true
+              {isDark === true
                 ? <img src={mongoDBLogoLight} alt="MongoDB Logo" />
                 : <img src={mongoDBLogoDark} alt="MongoDB Logo" />
               }
-              <p>MongoDB</p>
+              <h5>MongoDB</h5>
             </div>
             <div>
-            {isDark === true
-                ? <img src={mongooseLogoLight} alt="Mongoose Logo" />
-                : <img src={mongooseLogoDark} alt="Mongoose Logo" />
+              {isDark === true
+                ? <img src={mongooseLogoLight} alt="Mongoose Logo" className="mongo"/>
+                : <img src={mongooseLogoDark} alt="Mongoose Logo" className="mongo"/>
               }
-              <p>Mongoose</p>
+              <h5>Mongoose</h5>
             </div>
           </article>
         </section>
         <section>
           <aside>
-            <p>Frontend</p>
+            <p>Other Technologies</p>
           </aside>
           <article className="technologies">
             <div>
-              <p>Img</p>
-              <p>React</p>
+            {isDark === true
+                ? <img src={gitLogoLight} alt="Git Logo" />
+                : <img src={gitLogoDark} alt="Git Logo" />
+              }
+              <h5>Git</h5>
             </div>
             <div>
-              <p>Img</p>
-              <p>Sass</p>
+            {isDark === true
+                ? <img src={githubLogoLight} alt="Github Logo" />
+                : <img src={githubLogoDark} alt="Github Logo" />
+              }
+              <h5>GitHub</h5>
             </div>
             <div>
-              <p>Img</p>
-              <p>React</p>
+            {isDark === true
+                ? <img src={renderLogoLight} alt="Render Logo" />
+                : <img src={renderLogoDark} alt="Render Logo" />
+              }
+              <h5>Render</h5>
+            </div>
+            <div>
+            {isDark === true
+                ? <img src={netlifyLogoLight} alt="Netlify Logo" />
+                : <img src={netlifyLogoDark} alt="Netlify Logo" />
+              }
+              <h5>Netlify</h5>
             </div>
           </article>
         </section>
