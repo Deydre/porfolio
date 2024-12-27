@@ -1,8 +1,4 @@
 import React from "react";
-import autodidactaImg from '../../../../public/autodidacta.png';
-import detallistaImg from '../../../../public/detallista.png';
-import equipoImg from '../../../../public/equipo.png';
-
 
 const About = () => {
   return <>
@@ -13,7 +9,7 @@ const About = () => {
       <div>
         <article>
           <div className="aboutDivImg">
-            <img src={autodidactaImg} alt="Libro abierto con estrellas" className="imgSobreMi" />
+            <img src="" alt="" className="imgSobreMi" />
           </div>
           <div className="aboutDivTxt">
             <h4>Autodidacta</h4>
@@ -23,7 +19,7 @@ const About = () => {
         </article>
         <article>
           <div className="aboutDivImg">
-            <img src={equipoImg} alt="Dos amnos encajando piezas de puzzle" className="imgSobreMi" />
+            <img src="" alt="" className="imgSobreMi" />
           </div>
           <div className="aboutDivTxt">
             <h4>Trabajo en Equipo</h4>
@@ -33,7 +29,7 @@ const About = () => {
         </article>
         <article>
           <div className="aboutDivImg">
-            <img src={detallistaImg} alt="Lápiz cohete" className="imgSobreMi" />
+            <img src="" alt="" className="imgSobreMi" />
           </div>
           <div className="aboutDivTxt">
             <h4>Resolutiva y detallista</h4>

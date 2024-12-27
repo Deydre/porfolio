@@ -1,5 +1,5 @@
 import React from "react";
-import ToggleMode from "../commons/toggleMode/toggleMode";
+import ToggleMode from "./toggleMode/toggleMode";
 
 
 const Header = () => {

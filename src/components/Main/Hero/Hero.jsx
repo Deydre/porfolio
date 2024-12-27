@@ -24,7 +24,6 @@ const Hero = () => {
     };
   }, []);
 
-
   return <>
     <section id="hero">
       <article>
