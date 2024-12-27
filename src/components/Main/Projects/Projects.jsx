@@ -1,5 +1,11 @@
 import React, { useContext } from "react";
 import { context } from "../../../context/context"
+
+import javascriptLogoLight from '../../../assets/logos/javascript.png';
+import javascriptLogoDark from '../../../assets/logos/javascript_dark.png';
+import typescriptLogoLight from '../../../assets/logos/typescript.png';
+import typescriptLogoDark from '../../../assets/logos/typescript_dark.png';
+
 import reactLogoLight from '../../../assets/logos/react.png';
 import reactLogoDark from '../../../assets/logos/react_dark.png';
 import sassLogoLight from '../../../assets/logos/sass.png';
@@ -45,17 +51,17 @@ const Projects = () => {
           <article className="technologies">
             <div>
               {isDark === true
-                ? <img src={JavascriptLogoLight} alt="Javascript Logo" />
-                : <img src={JavascriptLogoDark} alt="Javascript Logo" />
+                ? <img src={javascriptLogoLight} alt="Javascript Logo" />
+                : <img src={javascriptLogoDark} alt="Javascript Logo" />
               }
-              <h5>React</h5>
+              <h5>Javascript</h5>
             </div>
             <div>
               {isDark === true
-                ? <img src={TypescriptLogoLight} alt="Typescript Logo" />
-                : <img src={TypescriptLogoDark} alt="Typescript Logo" />
+                ? <img src={typescriptLogoLight} alt="Typescript Logo" />
+                : <img src={typescriptLogoDark} alt="Typescript Logo" />
               }
-              <h5>Sass</h5>
+              <h5>Typescript</h5>
             </div>
           </article>
         </section>
