@@ -16,8 +16,8 @@ import nodeLogoDark from '../../../assets/logos/nodejs_dark.png';
 import expressLogoLight from '../../../assets/logos/expressjs.png';
 import expressLogoDark from '../../../assets/logos/expressjs_dark.png';
 
-import postgreSQLLogoLight from '../../../assets/logos/postgreSQL.png';
-import postgreSQLLogoDark from '../../../assets/logos/postgreSQL_dark.png';
+import postgreSQLLogoLight from '../../../assets/logos/postgresql.png';
+import postgreSQLLogoDark from '../../../assets/logos/postgresql_dark.png';
 import sequelizeLogoLight from '../../../assets/logos/sequelize.png';
 import sequelizeLogoDark from '../../../assets/logos/sequelize_dark.png';
 import mongoDBLogoLight from '../../../assets/logos/mongoDB.png';
