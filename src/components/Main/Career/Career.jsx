@@ -41,9 +41,9 @@ const Career = () => {
 
   return <>
     <section id="sectionSkillsCareer">
+      <h3>Experiencia</h3>
       <article>
-        <h3>Skills</h3>
-        <section className="typeSkills">
+        {/* <section className="typeSkills">
           <aside>
             <h6>LENGUAJES</h6>
           </aside>
@@ -108,7 +108,7 @@ const Career = () => {
         </section>
         <section className="typeSkills">
           <aside>
-            <h6>BASES <br></br>DE DATOS</h6>
+            <h6>BASES DE DATOS</h6>
           </aside>
           <article className="technologies">
             <div>
@@ -134,8 +134,8 @@ const Career = () => {
             </div>
             <div>
               {isDark === true
-                ? <img src={mongooseLogoLight} alt="Mongoose Logo" className="mongo"/>
-                : <img src={mongooseLogoDark} alt="Mongoose Logo" className="mongo"/>
+                ? <img src={mongooseLogoLight} alt="Mongoose Logo" className="mongo" />
+                : <img src={mongooseLogoDark} alt="Mongoose Logo" className="mongo" />
               }
               <h5>Mongoose</h5>
             </div>
@@ -147,42 +147,145 @@ const Career = () => {
           </aside>
           <article className="technologies">
             <div>
-            {isDark === true
+              {isDark === true
                 ? <img src={gitLogoLight} alt="Git Logo" />
                 : <img src={gitLogoDark} alt="Git Logo" />
               }
               <h5>Git</h5>
             </div>
             <div>
-            {isDark === true
+              {isDark === true
                 ? <img src={githubLogoLight} alt="Github Logo" />
                 : <img src={githubLogoDark} alt="Github Logo" />
               }
               <h5>GitHub</h5>
             </div>
             <div>
-            {isDark === true
+              {isDark === true
                 ? <img src={renderLogoLight} alt="Render Logo" />
                 : <img src={renderLogoDark} alt="Render Logo" />
               }
               <h5>Render</h5>
             </div>
             <div>
-            {isDark === true
+              {isDark === true
                 ? <img src={netlifyLogoLight} alt="Netlify Logo" />
                 : <img src={netlifyLogoDark} alt="Netlify Logo" />
               }
               <h5>Netlify</h5>
             </div>
           </article>
-        </section>
+        </section> */}
+        <article className="technologies typeSkills">
+          <div>
+            <div>
+              {isDark === true
+                ? <img src={javascriptLogoLight} alt="Javascript Logo" />
+                : <img src={javascriptLogoDark} alt="Javascript Logo" />
+              }
+              <h5>Javascript</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={typescriptLogoLight} alt="Typescript Logo" />
+                : <img src={typescriptLogoDark} alt="Typescript Logo" />
+              }
+              <h5>Typescript</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={reactLogoLight} alt="React Logo" />
+                : <img src={reactLogoDark} alt="React Logo" />
+              }
+              <h5>React</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={sassLogoLight} alt="Sass Logo" />
+                : <img src={sassLogoDark} alt="Sass Logo" />
+              }
+              <h5>Sass</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={nodeLogoLight} alt="Node Logo" />
+                : <img src={nodeLogoDark} alt="Node Logo" />
+              }
+              <h5>Node</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={expressLogoLight} alt="Express Logo" />
+                : <img src={expressLogoDark} alt="Express Logo" />
+              }
+              <h5>Express</h5>
+            </div>
+          </div>
+          <div>
+            <div>
+              {isDark === true
+                ? <img src={postgreSQLLogoLight} alt="PostgreSQL Logo" />
+                : <img src={postgreSQLLogoDark} alt="PostgreSQL Logo" />
+              }
+              <h5>PostgreSQL</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={sequelizeLogoLight} alt="Sequelize Logo" />
+                : <img src={sequelizeLogoDark} alt="Sequelize Logo" />
+              }
+              <h5>Sequelize</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={mongoDBLogoLight} alt="MongoDB Logo" />
+                : <img src={mongoDBLogoDark} alt="MongoDB Logo" />
+              }
+              <h5>MongoDB</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={mongooseLogoLight} alt="Mongoose Logo" className="mongo" />
+                : <img src={mongooseLogoDark} alt="Mongoose Logo" className="mongo" />
+              }
+              <h5>Mongoose</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={gitLogoLight} alt="Git Logo" />
+                : <img src={gitLogoDark} alt="Git Logo" />
+              }
+              <h5>Git</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={githubLogoLight} alt="Github Logo" />
+                : <img src={githubLogoDark} alt="Github Logo" />
+              }
+              <h5>GitHub</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={renderLogoLight} alt="Render Logo" />
+                : <img src={renderLogoDark} alt="Render Logo" />
+              }
+              <h5>Render</h5>
+            </div>
+            <div>
+              {isDark === true
+                ? <img src={netlifyLogoLight} alt="Netlify Logo" />
+                : <img src={netlifyLogoDark} alt="Netlify Logo" />
+              }
+              <h5>Netlify</h5>
+            </div>
+          </div>
+
+        </article>
+
       </article>
       <article>
-        <h3>Trayectoria</h3>
         <section className="typeCareer">
-          <article>
-            <CustomizedTimeline/>
-          </article>
+          <CustomizedTimeline />
         </section>
       </article>
     </section>

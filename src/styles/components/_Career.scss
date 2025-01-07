@@ -1,67 +1,77 @@
 @use '../utils/variables.scss' as *;
 @use '../utils/mixins.scss' as *;
 
+
 #sectionSkillsCareer {
     padding: 60px 22%;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column; 
+    gap: 20px; 
 
-    .typeSkills {
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    >div,
+    >article {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    >article {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        gap: 30px;
-        background: $gradient-dark-deg;
-        padding: 20px 30px;
-        border-radius: 10px;
+        gap: 20px; 
+        flex-wrap: wrap;
     }
 
+    .typeSkills,
     .typeCareer {
-        // width: 400px;
         background: $gradient-dark-deg;
         border-radius: 10px;
+        padding: 20px;
+        flex: 1; 
+        min-width: 300px; 
     }
 
-    aside {
-        width: 80px;
-
-        h6 {
-            color: $light-soft;
-        }
+    aside h6 {
+        color: $light-soft;
     }
-}
-
-#sectionSkillsCareer > article {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .technologies {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
 
-    div {
+    >div {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 8px;
-        width: 50px;
+        gap: 40px;
 
-        img {
-            height: 36px;
-        }
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+            width: 50px;
 
-        .mongo {
-            height: 14px;
-        }
+            img {
+                height: 36px;
+            }
 
-        h5 {
-            font-weight: 400;
+            .mongo {
+                height: 14px;
+            }
+
+            h5 {
+                font-weight: 400;
+            }
         }
     }
 
-}
 
+}

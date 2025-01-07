@@ -1,9 +1,57 @@
 @use '../utils/variables.scss' as *;
 
+.sectionOpposite {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.timelineContent {
+    padding-bottom: 30px !important;
+
+}
+
 .typeEducation {
     color: $primary-color;
 }
 
-#sectionSkillsCareer > article:nth-child(2) > section > article > ul > li > div.MuiTypography-root.MuiTypography-body1.MuiTimelineOppositeContent-root.MuiTimelineOppositeContent-positionAlternate.typeEducation.css-b76u07-MuiTypography-root-MuiTimelineOppositeContent-root > h6 {
+.typeEducationDot {
+    color: $dark !important;
+    background-color: $primary-color !important;
+}
 
+.typeWork {
+    color: $secondary-color;
+}
+
+.typeWorkDot {
+    color: $dark !important;
+    background-color: $secondary-color !important;
+}
+
+#sectionSkillsCareer>article:nth-child(2)>section>ul>li>div.MuiTypography-root.MuiTypography-body1.MuiTimelineOppositeContent-root.MuiTimelineOppositeContent-positionAlternate.typeEducation.css-b76u07-MuiTypography-root-MuiTimelineOppositeContent-root {
+    flex: 0;
+}
+
+.dataText li {
+    font-size: 14px;
+}
+
+#timeline {
+    .timelineContentTitle {
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .generalData {
+        color: $light-soft;
+        display: flex;
+        gap: 8px;
+
+    }
+
+    ul {
+        padding-left: 20px;
+    }
 }
