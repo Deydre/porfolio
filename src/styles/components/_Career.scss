@@ -1,21 +1,38 @@
 @use '../utils/variables.scss' as *;
 @use '../utils/mixins.scss' as *;
 
-#sectionSkills {
+#sectionSkillsCareer {
     padding: 60px 22%;
     display: flex;
     justify-content: center;
     gap: 20px;
 
-    section {
+    .typeSkills {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        background: $gradient-dark-deg;
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+
+    .typeCareer {
+        // width: 400px;
+        background: $gradient-dark-deg;
+        border-radius: 10px;
+    }
+
+    aside {
+        width: 80px;
+
+        h6 {
+            color: $light-soft;
+        }
     }
 }
 
-#sectionSkills > article {
+#sectionSkillsCareer > article {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -31,6 +48,7 @@
         align-items: center;
         justify-content: flex-end;
         gap: 8px;
+        width: 50px;
 
         img {
             height: 36px;
@@ -44,5 +62,6 @@
             font-weight: 400;
         }
     }
-    
+
 }
+
