@@ -5,9 +5,9 @@ import ToggleMode from "./toggleMode/toggleMode";
 const Header = () => {
   return <header>
     <nav>
-      <a href="">Sobre mí</a>
+      <a href="#sectionAbout">Sobre mí</a>
       <a href="">Proyectos</a>
-      <a href="">Experiencia</a>
+      <a href="#sectionSkillsCareer">Experiencia</a>
       <ToggleMode/>
     </nav>
   </header>;
