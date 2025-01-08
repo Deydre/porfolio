@@ -7,10 +7,12 @@
     gap: 34px;
     padding: 60px 22%;
 
+    > div:last-child {
+        background: $gradient-dark-deg;
+    }
+
     .aboutMeInnerSection {
         color: $light;
-        background: $gradient-dark-deg;
-        border-radius: 20px;
         // border: 2px solid rgba(255, 255, 255, 0.36);
         // box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.105);
         display: flex;
@@ -90,7 +92,7 @@
                 margin-bottom: 16px;
                 text-align: center;
             }
-            
+
             div:first-child,
             div:nth-child(2) {
                 width: 50%;
@@ -111,8 +113,30 @@
 }
 
 body.light #sectionAbout {
-    background: $light;
+    background: $primary-color;
+
+    > div:last-child {
+        background: $light;
+        @include shadow(rgba(70, 52, 131, 0.26));
+    }
+    .aboutMeInnerSection {
+        color: $dark;
+    }
 }
+
+body.light #sectionAbout #aboutMeInnerSection1 > article:last-child strong {
+    color: $dark;
+}
+
+body.light #sectionAbout #aboutMeInnerSection2 > article:last-child h6 {
+    color: $dark;
+}
+
+body.light #sectionAbout #aboutMeInnerSection2 > article:last-child ul li {
+    color: $light;
+    background: $gradient-dark;
+}
+
 
 #sectionAbout>div:first-child {
     display: flex;
@@ -120,9 +144,7 @@ body.light #sectionAbout {
 }
 
 #sectionAbout>div:nth-child(2) {
-    display: flex;
-    justify-content: space-between;
-    gap: 26px
+    border-radius: 20px;
 }
 
 .aboutDivImg {
