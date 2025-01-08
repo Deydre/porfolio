@@ -35,7 +35,7 @@ const Hero = () => {
           style={
             isDark
               ? { backgroundImage: gradient }
-              : { backgroundImage: "linear-gradient(0deg, #25202f 0%, #3c3047 100%)" } 
+              : { backgroundImage: "linear-gradient(0deg,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%)" } 
           }
         >
           Deydre
