@@ -15,8 +15,8 @@ const About = () => {
             <img src={profilePhoto} alt="Deydre sonriendo a cámara" />
             <h4>Deydre Alonso</h4>
             <div>
-              <a href=""><MdEmail /></a>
-              <a href="https://github.com/Deydre" target="_blank" className=""><FaGithub className="footerIcon" /></a>
+              <a href="mailto:deydrealonso@gmail.com" className="footerIcon"><MdEmail /></a>
+              <a href="https://github.com/Deydre" target="_blank"><FaGithub className="footerIcon" /></a>
               <a href="https://www.linkedin.com/in/deydre/" target="_blank"><FaLinkedin className="footerIcon" /></a>
             </div>
           </article>
