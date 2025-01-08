@@ -44,8 +44,8 @@ const Hero = () => {
           </a>
         </article>
         <article>
-          <a href="https://github.com/Deydre" target="_blank"><FaGithub className="footerIcon" /></a>
-          <a href="https://www.linkedin.com/in/deydre/" target="_blank"><FaLinkedin className="footerIcon" /></a>
+          <a href="https://github.com/Deydre" target="_blank" className="icon"><FaGithub className="footerIcon" /></a>
+          <a href="https://www.linkedin.com/in/deydre/" target="_blank" className="icon"><FaLinkedin className="footerIcon" /></a>
         </article>
       </section>
 

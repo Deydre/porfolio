@@ -56,6 +56,15 @@ a:hover, body.light a:hover {
     color: $secondary-color;
 }
 
+.icon {
+    font-size: 16px;
+    transition: font-size 0.3s ease-out;
+}
+
+.icon:hover {
+    font-size: 19px;
+}
+
 body.light a {
     text-decoration: none;
     color: $dark;
