@@ -1,5 +1,7 @@
 import React from "react";
 import profilePhoto from "../../../assets/profile_deydre.png";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const About = () => {
   return <>
@@ -11,11 +13,18 @@ const About = () => {
         <section id="aboutMeInnerSection1" className="aboutMeInnerSection">
           <article>
             <img src={profilePhoto} alt="Deydre sonriendo a cámara" />
-            <h3>Deydre Alonso</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h4>Deydre Alonso</h4>
+            <div>
+              <a href="mailto:deydrealonso@gmail.com" className="footerIcon"><MdEmail /></a>
+              <a href="https://github.com/Deydre" target="_blank"><FaGithub className="footerIcon" /></a>
+              <a href="https://www.linkedin.com/in/deydre/" target="_blank"><FaLinkedin className="footerIcon" /></a>
+            </div>
           </article>
           <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae gravida est. Pellentesque sit amet mauris sed nibh fermentum consequat. In porta orci ut est ultrices, sit amet ultrices enim feugiat. Ut in lectus ac tortor suscipit viverra commodo eget lectus. Fusce finibus mi a tortor dapibus, sit amet scelerisque ipsum fermentum. Sed quam nisi, lacinia vitae tristique ut, commodo sit amet orci. Nunc pharetra, nisi convallis pulvinar molestie, mi lectus aliquam magna</p>
+            <p>Desarrolladora Fullstack con experiencia en diseño y gran pasión por el aprendizaje de nuevas tecnologías.</p>
+            <p>Uniendo mis conocimientos de <strong>diseño web</strong> y <strong>desarrollo web</strong>, he encontrado la combinación perfecta entre <strong>creatividad y habilidades técnicas</strong> para crear soluciones completas y funcionales. </p>
+
+            <p>Como desarrolladora Fullstack, aporto un enfoque integral que une <strong>estética y funcionalidad en cada proyecto.</strong></p>
           </article>
         </section>
       </div>
@@ -36,8 +45,9 @@ const About = () => {
             <div>
               <h6>MIS OBJETIVOS</h6>
               <ul>
-                <li>Enfrentarme nuevos retos</li>
-                <li>Seguir aprendiendo</li>
+                <li>Nuevos retos</li>
+                <li>Aprendizaje continuo</li>
+                <li>Crecimiento profesional</li>
                 <li>Aportar valor a proyectos reales</li>
               </ul>
             </div>
