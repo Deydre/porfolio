@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin} from "react-icons/fa";
+import React, { useState, useEffect, useContext } from "react";
+import { context } from "../../../context/context"
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
 
   const [gradient, setGradient] = useState("linear-gradient(140deg, rgb(175, 99, 255) 0%, rgba(0,255,176,1) 45%)");
+  const { isDark } = useContext(context);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -29,10 +32,14 @@ const Hero = () => {
       <article>
         <h4>Hola, soy</h4>
         <h1
-          style={{
-            "background-image": gradient,
-          }}
-        >Deydre</h1>
+          style={
+            isDark
+              ? { backgroundImage: gradient }
+              : { backgroundImage: "linear-gradient(0deg,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%)" } 
+          }
+        >
+          Deydre
+        </h1>
       </article>
       <article>
         <p>Fullstack developer con una sólida formación en diseño y UI/UX.</p>

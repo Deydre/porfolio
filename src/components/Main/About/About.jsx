@@ -27,8 +27,6 @@ const About = () => {
             <p>Como desarrolladora Fullstack, aporto un enfoque integral que une <strong>estética y funcionalidad en cada proyecto.</strong></p>
           </article>
         </section>
-      </div>
-      <div>
         <section id="aboutMeInnerSection2" className="aboutMeInnerSection">
           <article>
             <div>

@@ -279,14 +279,14 @@ const Career = () => {
               <h5>Netlify</h5>
             </div>
           </div>
-
+          <section>
+          <CustomizedTimeline />
+        </section>
         </article>
 
       </article>
       <article>
-        <section className="typeCareer">
-          <CustomizedTimeline />
-        </section>
+        
       </article>
     </section>
   </>;
