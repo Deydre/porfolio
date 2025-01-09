@@ -33,7 +33,7 @@ const Projects = () => {
   const { isDark } = useContext(context);
 
   return <section id="sectionProjects">
-    <h3>Projects</h3>
+    <h3>Proyectos</h3>
     <div>
       <article id="gridOne">
         <img src={imgPixelist} alt="Captura de Pixelist" />
