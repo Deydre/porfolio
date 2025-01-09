@@ -44,7 +44,8 @@
 body.light #sectionSkillsCareer {
     background: $light;
 
-    .typeSkills, .typeCareer {
+    .typeSkills,
+    .typeCareer {
         background: $light;
         @include shadow(rgba(70, 52, 131, 0.26));
     }
@@ -62,6 +63,8 @@ body.light #sectionSkillsCareer {
 
     >div {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 40px;
 
         >div {
@@ -86,5 +89,16 @@ body.light #sectionSkillsCareer {
         }
     }
 
+}
 
+@media screen and (max-width: 1300px) {
+    #sectionSkillsCareer {
+        padding: 60px 8%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #sectionSkillsCareer {
+        padding: 60px 24px;
+    }
 }
