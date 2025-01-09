@@ -83,7 +83,9 @@ const Projects = () => {
             <li>UI/UX</li>
             <li>Buscador</li>
           </ul>
-          <button>Ver online <MdOpenInNew /></button>
+          <a href="https://pixelist.onrender.com/" target="_blank">
+            <button>Ver online <MdOpenInNew /></button>
+          </a>
         </div>
       </article>
       <article id="gridTwo">
@@ -134,7 +136,9 @@ const Projects = () => {
             <li>UI/UX</li>
             <li>Cliente real</li>
           </ul>
-          <button>Ver online <MdOpenInNew /></button>
+          <a href="https://chatbot-felgtbiq-front.onrender.com/" target="_blank">
+            <button>Ver online <MdOpenInNew /></button>
+          </a>
         </div>
       </article>
       <article id="gridThree">
@@ -185,7 +189,9 @@ const Projects = () => {
             <li>UI/UX</li>
             <li>Buscador</li>
           </ul>
-          <button>Ver online <MdOpenInNew /></button>
+          <a href="https://backendfinalproject-nbhl.onrender.com/" target="_blank">
+            <button>Ver online <MdOpenInNew /></button>
+          </a>
         </div>
       </article>
 
