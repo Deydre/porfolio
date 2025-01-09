@@ -8,6 +8,10 @@
     gap: 34px;
     padding: 60px 22%;
 
+    h3 {
+        text-align: center;
+    }
+
     >div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -103,6 +107,10 @@
 
 body.light #sectionProjects {
     background: $gradient;
+
+    h3 {
+        color: $light;
+    }
 
     >div>article>div {
         background: $light;
