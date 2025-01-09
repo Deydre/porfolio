@@ -23,3 +23,24 @@ footer article:nth-child(2) {
     border-left: 1px solid $light;
     padding: 0px 20px;
 }
+
+body.light {
+    footer {
+        p {
+            color: $light;
+        }
+        .footerIcon {
+            color: $light-soft;
+        }
+
+        .footerIcon:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    footer {
+        flex-direction: column;
+    }
+}
