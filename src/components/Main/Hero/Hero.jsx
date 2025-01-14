@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
-import { context } from "../../../context/context"
+import { context } from "../../../context/context";
+import cv from "../../../../src/assets/CV_2025_Deydre_Alonso.pdf";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { IoMdDownload } from "react-icons/io";
 
 const Hero = () => {
 
@@ -35,7 +37,7 @@ const Hero = () => {
           style={
             isDark
               ? { backgroundImage: gradient }
-              : { backgroundImage: "linear-gradient(0deg,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%)" } 
+              : { backgroundImage: "linear-gradient(0deg,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%)" }
           }
         >
           Deydre
@@ -46,11 +48,12 @@ const Hero = () => {
       </article>
       <section>
         <article>
-          <a href="mailto:deydrealonso@gmail.com">
-            <button><MdEmail />Contacto</button>
+          <a href={cv} download>
+            <button>Descarga mi CV <IoMdDownload /></button>
           </a>
         </article>
         <article>
+          <a href="mailto:deydrealonso@gmail.com" target="_blank" className="icon"><MdEmail className="footerIcon" /></a>
           <a href="https://github.com/Deydre" target="_blank" className="icon"><FaGithub className="footerIcon" /></a>
           <a href="https://www.linkedin.com/in/deydre/" target="_blank" className="icon"><FaLinkedin className="footerIcon" /></a>
         </article>
