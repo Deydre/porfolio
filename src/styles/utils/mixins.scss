@@ -1,0 +1,125 @@
+@mixin shadow ($shadow-color) {
+    -webkit-box-shadow: 4px 4px 12px 4px $shadow-color;
+    -moz-box-shadow: 4px 4px 12px 4px $shadow-color;
+    box-shadow: 2px 2px 12px 2px $shadow-color;
+}
+
+@mixin soft-shadow ($shadow-color) {
+    -webkit-box-shadow: 4px 4px 12px 4px $shadow-color;
+    -moz-box-shadow: 4px 4px 12px 4px $shadow-color;
+    box-shadow: 0px 0px 4px 0px $shadow-color;
+}
+
+@mixin font-onest {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-thin {
+    font-family: "Fira Sans", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-extralight {
+    font-family: "Fira Sans", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-light {
+    font-family: "Fira Sans", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-regular {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-medium {
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-semibold {
+    font-family: "Fira Sans", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-bold {
+    font-family: "Fira Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-extrabold {
+    font-family: "Fira Sans", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-black {
+    font-family: "Fira Sans", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+@mixin font-fira-sans-thin-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+@mixin font-fira-sans-extralight-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@mixin font-fira-sans-light-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@mixin font-fira-sans-regular-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@mixin font-fira-sans-medium-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@mixin font-fira-sans-semibold-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@mixin font-fira-sans-bold-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@mixin font-fira-sans-extrabold-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+@mixin font-fira-sans-black-italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 900;
+    font-style: italic;
+}

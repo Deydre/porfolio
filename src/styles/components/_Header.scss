@@ -1,0 +1,22 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+header {
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: $dark;
+    padding: 8px 20px;
+    border-radius: 20px;
+}

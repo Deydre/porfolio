@@ -1,0 +1,166 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+
+#sectionProjects {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding: 60px 22%;
+
+    h3 {
+        text-align: center;
+    }
+
+    >div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 24px;
+
+        #gridOne {
+            grid-column: 1 / 1;
+            grid-row: 1;
+        }
+
+        #gridTwo {
+            grid-column: 2 / 2;
+            grid-row: 1;
+        }
+
+        #gridThree {
+            grid-column: 1 / 1;
+            grid-row: 2;
+        }
+
+        >article {
+            display: flex;
+            flex-flow: column;
+
+            >img {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+                object-position: top left;
+                border-radius: 14px 14px 0px 0px;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            >div {
+                padding: 28px 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                background: $gradient-dark-deg;
+                border-radius: 0px 0px 14px 14px;
+
+                h4 {
+                    @include font-onest;
+                    font-weight: 800;
+                    font-size: 16px;
+                }
+
+                p {
+                    color: $light-soft;
+                    font-size: 14px;
+                }
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 16px;
+                    align-items: center;
+
+                }
+
+                button {
+                    font-size: 14px;
+                    width: fit-content;
+                }
+            }
+        }
+
+        .titleLogos {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .listInfo {
+            margin-top: 10px;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .listInfo li {
+            font-size: 14px;
+            padding: 4px 18px;
+            border-radius: 100px;
+            background: $light-softer;
+        }
+    }
+
+}
+
+body.light #sectionProjects {
+    background: $gradient;
+
+    h3 {
+        color: $light;
+    }
+
+    >div>article>div {
+        background: $light;
+
+        p {
+            color: $dark;
+        }
+
+        ul:nth-child(4) {
+            li {
+                color: $light;
+                background: $gradient-dark;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    #sectionProjects {
+        padding: 60px 8%;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+
+    #sectionProjects {
+        padding: 60px 24px;
+
+        >div {
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: auto;
+            gap: 24px;
+
+            #gridOne {
+                grid-column: 1 / 1;
+                grid-row: 1;
+            }
+
+            #gridTwo {
+                grid-column: 1 / 1;
+                grid-row: 2;
+            }
+
+            #gridThree {
+                grid-column: 1 / 1;
+                grid-row: 3;
+            }
+        }
+    }
+}

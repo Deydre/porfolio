@@ -1,0 +1,146 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    @include font-onest;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+body {
+    background-position:top; 
+    background-repeat: no-repeat; 
+    color: $light;
+    background: $dark;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body.light {
+    color: $dark;
+    background: $gradient;
+    background-color: $light;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $dark;
+    z-index: -1;
+  }
+
+a {
+    text-decoration: none;
+    color: $light;
+    font-weight: 500;
+}
+
+a:hover {
+    color: $secondary-color;
+}
+
+.icon {
+    font-size: 16px;
+    transition: font-size 0.3s ease-out;
+}
+
+.icon:hover {
+    font-size: 19px;
+}
+
+.footerIcon {
+    color: $light-soft;
+    transition: font-size 0.3s ease-out;
+}
+
+.footerIcon:hover {
+    color: $secondary-color;
+}
+
+body.light .footerIcon {
+    color: $dark;
+}
+
+body.light button {
+    color: $light;
+    background: $gradient-dark;
+}
+
+.logoMini {
+    width: 24px;
+}
+
+body.light a {
+    text-decoration: none;
+    transition: color 0.5s ease-out, color 0.5s ease-out;
+}
+
+h1 {
+    @include font-fira-sans-black-italic;
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+h3 {
+    @include font-fira-sans-black-italic;
+    font-size: 30px;
+}
+
+h4 {
+    @include font-fira-sans-black-italic;
+    font-size: 20px;
+}
+
+h6 {
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+button {
+    padding: 8px 18px;
+    font-weight: 700;
+    border-radius: 100px;
+    background-color: inherit;
+    color: $light;
+    border: 1px solid $light-soft;
+    background: $gradient-darker;
+    transition: background 0.3s ease, font-size 0.3s ease, padding 0.3s ease, border 0.3s ease; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: $gradient;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 1px solid $secondary-color;
+    @include soft-shadow($primary-color);
+}
+
+    // color: transparent;
+    // background-image: $primary-color;
+    // background-clip: text;
+    // text-decoration: none;

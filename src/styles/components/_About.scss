@@ -1,0 +1,192 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+#sectionAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding: 60px 22%;
+
+    > div:last-child {
+        background: $gradient-dark-deg;
+    }
+
+    .aboutMeInnerSection {
+        color: $light;
+        // border: 2px solid rgba(255, 255, 255, 0.36);
+        // box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.105);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 40px 60px;
+        gap: 60px;
+
+    }
+
+    #aboutMeInnerSection1 {
+
+        >article:first-child {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            img {
+                margin-bottom: 20px;
+            }
+
+        }
+
+        >article:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 14px;
+
+            strong {
+                color: $secondary-color;
+            }
+        }
+
+        img {
+            width: 160px;
+            border-radius: 100px;
+        }
+
+        div {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+
+            a:first-child {
+                font-size: 21px;
+            }
+        }
+
+    }
+
+    #aboutMeInnerSection2 {
+
+        >article:last-child {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+
+                li {
+                    padding: 4px 18px;
+                    border-radius: 100px;
+                    background: $light-softer;
+                }
+            }
+
+            h6 {
+                color: $secondary-color;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            div:first-child,
+            div:nth-child(2) {
+                width: 50%;
+                margin-bottom: 40px;
+            }
+
+            div:last-child {
+                margin-bottom: 18px;
+            }
+
+        }
+
+    }
+
+    p {
+        font-weight: 400;
+    }
+}
+
+body.light #sectionAbout {
+    background: $light;
+
+    > div:last-child {
+        background: $light;
+        @include shadow(rgba(70, 52, 131, 0.26));
+    }
+    .aboutMeInnerSection {
+        color: $dark;
+    }
+}
+
+body.light #sectionAbout #aboutMeInnerSection1 > article:last-child strong {
+    color: $dark;
+}
+
+body.light #sectionAbout #aboutMeInnerSection2 > article:last-child h6 {
+    color: $dark;
+}
+
+body.light #sectionAbout #aboutMeInnerSection2 > article:last-child ul li {
+    color: $light;
+    background: $gradient-dark;
+}
+
+
+#sectionAbout>div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+#sectionAbout>div:nth-child(2) {
+    border-radius: 20px;
+}
+
+.aboutDivImg {
+    border: 100px;
+    text-align: center;
+}
+
+.aboutDivTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.imgSobreMi {
+    width: 100px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    #sectionAbout {
+        padding: 60px 8%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #sectionAbout {
+        padding: 60px 24px;
+
+        .aboutMeInnerSection {
+            flex-direction: column;
+            align-items:  center;
+            padding: 40px 30px;
+            text-align: center;
+        }
+    }
+
+    #sectionAbout #aboutMeInnerSection2 > article:last-child div:first-child, #sectionAbout #aboutMeInnerSection2 > article:last-child div:nth-child(2) {
+        width: 100%;
+    }
+}
